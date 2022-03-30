@@ -20,18 +20,26 @@
 }
 
 .header__burger-button {
+    display: none;
+    position: absolute;
     border: none;
     background: none;
     padding: 0;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 @media (max-width: 768px) {
     .header__header-menu {
         margin: 17px auto;
-        max-width: 110px;
     }
 
     .header__title {
         margin: 49px auto;
+    }
+
+    .header__burger-button {
+        display: block;
     }
 }

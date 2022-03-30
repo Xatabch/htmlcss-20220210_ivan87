@@ -18,13 +18,21 @@
         <link rel="stylesheet" href="../../components/main/index.css">
         <link rel="stylesheet" href="../../components/tabs/index.css">
         <link rel="stylesheet" href="../../components/separator/index.css">
+        <link rel="stylesheet" href="../../components/burger-menu/index.css">
         <link rel="stylesheet" href="./index.css">
+        <script defer src="../../assets/js/burger-menu.js"></script>
+        <script defer src="../../assets/js/index.js"></script>
         <title>Reusable component library</title>
     </head>
     <body>
-        <section class="page-component">
+        <section class="page-component page-component_preload">
             <header class="header header_white">
                 <section class="header-menu header__header-menu">
+                    <button class="header__burger-button" id="burger-menu-open">
+                        <svg class="header__burger-icon">
+                            <use href="../../assets/icons/sprites.svg#menu">
+                        </svg>
+                    </button>
                     <div class="logo">
                         <svg class="logo__icon">
                             <use href="../../assets/icons/sprites.svg#logo">
@@ -212,6 +220,31 @@
                     </p>
                 </section>
             </footer>
+            <div class="burger-menu" id="burger-menu">
+                <div class="burger-menu__inner">
+                    <section class="header-menu burger-menu__header-menu">
+                        <button class="burger-menu__close-button" id="burger-menu-close">
+                            <svg class="burger-menu__close-icon">
+                                <use href="../../assets/icons/sprites.svg#cross">
+                            </svg>
+                        </button>
+                        <div class="logo">
+                            <svg class="logo__icon">
+                                <use href="../../assets/icons/sprites.svg#logo">
+                            </svg>
+                        </div>
+                    </section>
+                    <div class="separator main__separator"></div>
+                    <h4 class="burger-menu__header">Components</h4>
+                    <a class="burger-menu__item" href="#">Modal</a>
+                    <a class="burger-menu__item" href="#">Tooltip</a>
+                    <a class="burger-menu__item" href="#">Avatar</a>
+                    <a class="burger-menu__item" href="#">Calendar</a>
+                    <a class="burger-menu__item" href="#">Histogram</a>
+                    <a class="burger-menu__item" href="#">Custom form elements</a>
+                    <a class="burger-menu__item buger-menu__item_big-margin" href="#">Main page</a>
+                </div>
+            </div>
         </section>
     </body>
 </html>

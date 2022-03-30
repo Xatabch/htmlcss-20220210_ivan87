@@ -4,6 +4,8 @@
 
 @media (max-width: 768px) {
     .header-menu {
-        max-width: 110px;
+        position: relative;
+        display: flex;
+        justify-content: center;
     }
 }

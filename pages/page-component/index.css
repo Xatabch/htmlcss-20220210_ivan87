@@ -28,6 +28,13 @@
     gap: 30px;
 }
 
+.page-component_preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
 @media (max-width: 1142px) {
     .page-component__cards {
         max-width: 730px;
