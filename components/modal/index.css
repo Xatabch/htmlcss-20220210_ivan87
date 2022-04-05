@@ -8,6 +8,11 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.modal_preview {
+    display: block;
+    position: relative;
+}
+
 .modal__popup {
     position: absolute;
     top: 50%;
@@ -16,6 +21,10 @@
     padding: 30px 40px;
     background: var(--white);
     border-radius: 8px;
+}
+
+.modal__popup_preview {
+    padding: 20px 30px;
 }
 
 .modal__title {
@@ -42,8 +51,19 @@
 .modal__close {
     position: absolute;
     cursor: pointer;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     top: 12px;
     right: 12px;
+}
+
+.modal__form-group {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .modal__popup_preview {
+        padding: 7px 7px;
+        border-radius: 0;
+    }
 }

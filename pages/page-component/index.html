@@ -19,6 +19,11 @@
         <link rel="stylesheet" href="../../components/tabs/index.css">
         <link rel="stylesheet" href="../../components/separator/index.css">
         <link rel="stylesheet" href="../../components/burger-menu/index.css">
+        <link rel="stylesheet" href="../../components/modal/index.css">
+        <link rel="stylesheet" href="../../components/input/index.css">
+        <link rel="stylesheet" href="../../components/button/index.css">
+        <link rel="stylesheet" href="../../components/checkbox/index.css">
+        <link rel="stylesheet" href="../../components/radio/index.css">
         <link rel="stylesheet" href="./index.css">
         <script defer src="../../assets/js/burger-menu.js"></script>
         <script defer src="../../assets/js/index.js"></script>
@@ -135,6 +140,35 @@
                             </div>
                             <div class="card">
                                 <div class="card__preview">
+                                    <div id="modal" class="modal modal_preview">
+                                        <div class="modal__popup modal__popup_preview">
+                                            <label class="form-group modal__form-group">
+                                                <div class="form-group__title form-group__title_preview">Name</div>
+                                                <div class="form-group__wrapper">
+                                                    <input type="text" placeholder="Placeholder" class="form-group__input form-group__input_preview">
+                                                    <svg class="form-group__icon form-group__icon_success">
+                                                        <use href="../../assets/icons/sprites.svg#success">
+                                                    </svg>
+                                                    <svg class="form-group__icon form-group__icon_error">
+                                                        <use href="../../assets/icons/sprites.svg#error">
+                                                    </svg>
+                                                </div>
+                                            </label>
+                                            <label class="form-group modal__form-group">
+                                                <div class="form-group__title form-group__title_preview">Email</div>
+                                                <div class="form-group__wrapper">
+                                                    <input type="text" placeholder="Placeholder" class="form-group__input form-group__input_preview">
+                                                    <svg class="form-group__icon form-group__icon_success">
+                                                        <use href="../../assets/icons/sprites.svg#success">
+                                                    </svg>
+                                                    <svg class="form-group__icon form-group__icon_error">
+                                                        <use href="../../assets/icons/sprites.svg#error">
+                                                    </svg>
+                                                </div>
+                                            </label>
+                                            <button class="button button_primary button_preview">Submit</button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="card__description">
                                     <h4 class="card__title">Modal dialog</h4>
@@ -198,6 +232,72 @@
                                 </div>
                                 <div class="card__description">
                                     <h4 class="card__title">Avatar</h4>
+                                    <h4 class="card__subtitle">Element</h4>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card__preview">
+                                    <div class="card__left-side">
+                                        <label class="checkbox card__checkbox">
+                                            <input type="checkbox" class="checkbox__input"/>
+                                            <span class="checkbox__state">
+                                                <span class="checkbox__control">
+                                                    <svg class="checkbox__icon">
+                                                        <use href="../../assets/icons/sprites.svg#check">
+                                                    </svg>
+                                                </span>
+                                                <span class="checkbox__title">Default</span>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox card__checkbox">
+                                            <input type="checkbox" class="checkbox__input" checked/>
+                                            <span class="checkbox__state">
+                                                <span class="checkbox__control">
+                                                    <svg class="checkbox__icon">
+                                                        <use href="../../assets/icons/sprites.svg#check">
+                                                    </svg>
+                                                </span>
+                                                <span class="checkbox__title">Checked</span>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="checkbox__input" disabled/>
+                                            <span class="checkbox__state">
+                                                <span class="checkbox__control">
+                                                    <svg class="checkbox__icon">
+                                                        <use href="../../assets/icons/sprites.svg#check">
+                                                    </svg>
+                                                </span>
+                                                <span class="checkbox__title">Disabled</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="card__right-side">
+                                        <label class="radiobutton card__radiobutton">
+                                            <input type="radio" id="radioButton" class="radiobutton__input">
+                                            <span class="radiobutton__state">
+                                                <span class="radiobutton__control"></span>
+                                                <span class="radiobutton__title">Default</span>
+                                            </span>
+                                        </label>
+                                        <label class="radiobutton card__radiobutton">
+                                            <input type="radio" id="radioButton" class="radiobutton__input" checked>
+                                            <span class="radiobutton__state">
+                                                <span class="radiobutton__control"></span>
+                                                <span class="radiobutton__title">Selected</span>
+                                            </span>
+                                        </label>
+                                        <label class="radiobutton">
+                                            <input type="radio" id="radioButton" class="radiobutton__input" disabled>
+                                            <span class="radiobutton__state">
+                                                <span class="radiobutton__control"></span>
+                                                <span class="radiobutton__title">Disabled</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="card__description">
+                                    <h4 class="card__title">Custom form elements</h4>
                                     <h4 class="card__subtitle">Element</h4>
                                 </div>
                             </div>
